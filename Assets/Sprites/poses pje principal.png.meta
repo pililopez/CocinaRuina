@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: 366169177f62b6a4fa98f64a577ce6f8
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: poses pje bajar_1
+    21300002: poses pje bajar_2
+    21300004: poses pje subir_2
+    21300006: poses pje principal_3
+    21300008: poses pje d_i_1
+    21300010: poses pje d_i_1
+    21300012: poses pje subir_1
+    21300014: poses pje d_i_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +33,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +50,76 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: poses pje bajar_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 30
+        width: 290
+        height: 458
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: poses pje bajar_2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 30
+        width: 291
+        height: 469
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: poses pje subir_2
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 27
+        width: 304
+        height: 459
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: poses pje principal_3
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 27
+        width: 304
+        height: 459
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: poses pje d_i_1
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 22
+        width: 262
+        height: 478
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: poses pje d_i_2
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 26
+        width: 262
+        height: 474
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: poses pje subir_1
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 25
+        width: 304
+        height: 459
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
