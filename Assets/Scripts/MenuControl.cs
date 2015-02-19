@@ -2,15 +2,15 @@
 using System.Collections;
 
 public class MenuControl : MonoBehaviour {
-
+	Animator animacion;
 
 	public void  Instrucciones(){
+	if (Input.GetMouseButton ("0")) 
+			Animation.SetBool ("Instrucciones"), true;		
+	if (!Input.GetMouseButton ("0")) 
+			Animation.SetBool ("Instrucciones fuera"), true;	
 
-		animation.Instrucciones.true};
-	    if (Input.GetMouseButtonDown ("0")){
-		else {animation.Instrucciones.false}
 	}
-
 	public void Salir(){
 		Application.Quit ();
 	}
@@ -20,8 +20,11 @@ public class MenuControl : MonoBehaviour {
 	}
 
 	public void Logros(){
-		if (Input.GetMouseButtonDown ("0")) {
-				
-		}
-		}
+	/*	if (Input.GetMouseButton ("0")) {
+			Animation.SetBool ("Logros", true);	
+		}*/
 	}
+	public void Recetas(){
+
+	}
+}
