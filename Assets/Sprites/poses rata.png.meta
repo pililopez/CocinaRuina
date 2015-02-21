@@ -1,7 +1,9 @@
 fileFormatVersion: 2
 guid: a0c77674e02f0694cb3a8395c671339e
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: poses rata_0
+    21300002: poses rata_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +27,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +44,26 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: poses rata_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 136
+        width: 201
+        height: 330
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: poses rata_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 132
+        width: 216
+        height: 335
+      alignment: 9
+      pivot: {x: .479999989, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
