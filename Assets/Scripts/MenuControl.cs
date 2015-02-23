@@ -14,11 +14,9 @@ public class MenuControl : MonoBehaviour {
 	public void  Instrucciones(){
 
 		if (Input.GetMouseButtonDown (0)) { 
-				animacion.SetBool ("Instrucciones", true);	
+			animacion.SetBool("instruc", true);	
 					}
-		if (Input.GetMouseButtonDown (0)) { 
-				animacion.SetBool ("Instrucciones fuera", true);	
-				}
+
 	}
 	public void Salir(){
 		Application.Quit ();
@@ -30,7 +28,7 @@ public class MenuControl : MonoBehaviour {
 
 	public void Logros(){
 		if (Input.GetMouseButtonDown (0)) {
-				animacion.SetBool ("Logros", true);	
+				animacion.SetBool ("logro", true);	
 		}
 		if (Input.GetMouseButtonDown (0)) { 
 				animacion.SetBool ("Logros fuera", true);	
