@@ -14,10 +14,10 @@ public class PuntosPlayer : MonoBehaviour {
 	void Update () {
 		guiText.text = "0"+ total_puntos;//cambiar por imagen
 		if (total_puntos > 50) {
-			total_puntos = 0 && total_vida = (total_vidas + 1);
+			total_puntos = 0 && total_vida = (total_vida + 1);
 		}
 		if (total_puntos < 50) {
-			total_puntos = +50 && total_vida = total_vidas - 1;
+			total_puntos = +50 && total_vida = total_vida - 1;
 	}
 }
 }
