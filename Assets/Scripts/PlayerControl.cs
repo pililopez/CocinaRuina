@@ -6,11 +6,11 @@ public class PlayerControl : MonoBehaviour {
 	public float moveForce = 365f;            
 	public float maxSpeed = 5f; 
 
-//	private LiveController live;
+//	private VidaPlayer vida;
 	private ParticleSystem Sangre;
 	// Use this for initialization
 	void Start () {
-//		live = GameObject.Find ("Live").GetComponent<LiveController> ();
+//		vida = GameObject.Find ("Vida").GetComponent<VidaPlayer> ();
 	}
 	
 	// Update is called once per frame
@@ -41,12 +41,12 @@ public class PlayerControl : MonoBehaviour {
 
 /*	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Enemigo"){
-			live.total_live -=10;
+			live.total_puntos -=10;
 			Destroy(col.gameObject);
 		}
 
 		if (col.gameObject.tag == "Ingrediente"){
-			live.total_live +=20;
+			live.total_puntos +=20;
 			Destroy(col.gameObject);
 		}
 	}*/

@@ -6,7 +6,7 @@ public class AparicionEnemigos : MonoBehaviour {
 	public float spawnTime=1f;
 	public float spawnDelay=1f;
 	public GameObject[] enemies;
-	public int maxEnemies=4;
+	public int maxEnemies=8;
 	
 	private GameObject[] enemiesCreated;
 	// Use this for initialization
