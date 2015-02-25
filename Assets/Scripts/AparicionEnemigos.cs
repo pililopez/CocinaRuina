@@ -11,7 +11,7 @@ public class AparicionEnemigos : MonoBehaviour {
 	private GameObject[] enemiesCreated;
 	// Use this for initialization
 	void Start () {
-	InvokeRepeating ("DispensEnemigos", spawnDelay, spawnTime);
+		InvokeRepeating ("CreaEnemigo", spawnDelay, spawnTime);
 	}
 	
 	// Update is called once per frame

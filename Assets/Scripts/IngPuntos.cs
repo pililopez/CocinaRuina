@@ -4,7 +4,6 @@ using System.Collections;
 public class IngPuntos : MonoBehaviour {
 	public AudioClip LevelUp;
 	public static bool dead;
-	float resetTimer = 0 ; 
 	public int puntos =1;
 
 	// Use this for initialization
@@ -17,10 +16,11 @@ public class IngPuntos : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter2D(Collider2D col) {
-		if (Time.time > resetTimer && !total_vida){
+		if (col.transform.tag == "Player"){
+
 			AudioSource.PlayClipAtPoint(LevelUp, transform.position);
-			resetTimer = Time.time + 3;
-			total_puntos = total_puntos + puntos;
+
+			GameControl.gamecontrol.total_puntos = GameControl.gamecontrol.total_puntos + puntos;
 			//Debug.Log ("LevelUp;" + GameControl.score);
 			Destroy (gameObject);
 		}

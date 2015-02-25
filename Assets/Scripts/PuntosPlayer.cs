@@ -12,12 +12,7 @@ public class PuntosPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		guiText.text = "0"+ total_puntos;//cambiar por imagen
-		if (total_puntos > 50) {
-			total_puntos = 0 && total_vida = (total_vida + 1);
-		}
-		if (total_puntos < 50) {
-			total_puntos = +50 && total_vida = total_vida - 1;
+		//guiText.text = "0"+ GameControl.gamecontrol.total_puntos;//cambiar por imagen
+
 	}
-}
 }

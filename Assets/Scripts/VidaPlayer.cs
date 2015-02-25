@@ -13,7 +13,7 @@ public class VidaPlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		guiText.text = ""+ total_vida;//cambiar por imagen
+		//guiText.text = ""+ total_vida;//cambiar por imagen
 
 		if (total_vida <= 0) {
 			Application.LoadLevel ("menu");

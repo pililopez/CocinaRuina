@@ -39,16 +39,6 @@ public class PlayerControl : MonoBehaviour {
 
 		}
 
-/*	void OnCollisionEnter2D(Collision2D col){
-		if (col.gameObject.tag == "Enemigo"){
-			live.total_puntos -=10;
-			Destroy(col.gameObject);
-		}
 
-		if (col.gameObject.tag == "Ingrediente"){
-			live.total_puntos +=20;
-			Destroy(col.gameObject);
-		}
-	}*/
 
 }
