@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
-
+	Animator animacion;
 	public float moveForce = 365f;            
 	public float maxSpeed = 5f; 
 
@@ -11,11 +11,23 @@ public class PlayerControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 //		vida = GameObject.Find ("Vida").GetComponent<VidaPlayer> ();
+		animacion = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetButtonDown ("W")) { 
+			animacion.SetBool("sube", true);	
+		}
+		if (Input.GetButtonDown ("S")) { 
+			animacion.SetBool("baja", true);	
+		}
+		if (Input.GetButtonDown ("D")) { 
+			animacion.SetBool("izq_dch", true);	
+		}
+		if (Input.GetButtonDown ("A")) { 
+			animacion.SetBool("izq_dch", true);	
+		}
 	}
 	void FixedUpdate (){
 	// Cache the horizontal input.
