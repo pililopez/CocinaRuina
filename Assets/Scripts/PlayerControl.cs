@@ -16,16 +16,16 @@ public class PlayerControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown ("W")) { 
+		if (Input.GetKeyDown ("w")) { 
 			animacion.SetBool("sube", true);	
 		}
-		if (Input.GetButtonDown ("S")) { 
+		if (Input.GetKeyDown ("s")) { 
 			animacion.SetBool("baja", true);	
 		}
-		if (Input.GetButtonDown ("D")) { 
+		if (Input.GetKeyDown ("d")) { 
 			animacion.SetBool("izq_dch", true);	
 		}
-		if (Input.GetButtonDown ("A")) { 
+		if (Input.GetKeyDown ("a")) { 
 			animacion.SetBool("izq_dch", true);	
 		}
 	}
