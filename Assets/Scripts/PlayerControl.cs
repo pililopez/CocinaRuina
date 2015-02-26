@@ -17,16 +17,29 @@ public class PlayerControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("w")) { 
-			animacion.SetBool("sube", true);	
+			animacion.SetBool("sube", true);
+			animacion.SetBool("baja", false);
+			animacion.SetBool("izq_dch", false);
+			animacion.SetBool("izq_dch", false);	
 		}
 		if (Input.GetKeyDown ("s")) { 
-			animacion.SetBool("baja", true);	
+			animacion.SetBool("sube", false);
+			animacion.SetBool("baja", true);
+			animacion.SetBool("izq_dch", false);
+			animacion.SetBool("izq_dch", false);	
 		}
 		if (Input.GetKeyDown ("d")) { 
-			animacion.SetBool("izq_dch", true);	
+			animacion.SetBool("sube", false);
+			animacion.SetBool("baja", false);
+			animacion.SetBool("izq_dch", true);
+			transform.localScale = new Vector3(0.37f,0.37f,0.0f);
+
 		}
 		if (Input.GetKeyDown ("a")) { 
-			animacion.SetBool("izq_dch", true);	
+			animacion.SetBool("sube", false);
+			animacion.SetBool("baja", false);
+			animacion.SetBool("izq_dch", true);
+			transform.localScale = new Vector3(-0.37f,0.37f,0.0f);
 		}
 	}
 	void FixedUpdate (){
@@ -36,18 +49,21 @@ public class PlayerControl : MonoBehaviour {
 		
 		if (h * rigidbody2D.velocity.x < maxSpeed)             
 			rigidbody2D.AddForce (Vector2.right * h * moveForce);                  
-		if (Mathf.Abs (rigidbody2D.velocity.x) > maxSpeed)
-			rigidbody2D.velocity = new Vector2 (Mathf.Sign (rigidbody2D.velocity.x) * maxSpeed, rigidbody2D.velocity.y);
+
 
 		float v = Input.GetAxis ("Vertical");
 		
 		
 		if (v * rigidbody2D.velocity.y < maxSpeed)             
 			rigidbody2D.AddForce (Vector2.up * v * moveForce);                  
-		if (Mathf.Abs (rigidbody2D.velocity.y) > maxSpeed)
-			rigidbody2D.velocity = new Vector2 (Mathf.Sign (rigidbody2D.velocity.y) * maxSpeed, rigidbody2D.velocity.y);
 
 
+		if (v == 0 && h == 0) {
+			if(v==0)
+				rigidbody2D.velocity = new Vector3(0,rigidbody2D.velocity.y);
+			if(h==0)
+				rigidbody2D.velocity = new Vector3(rigidbody2D.velocity.x,0);
+				}
 
 		}
 

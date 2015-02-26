@@ -29,6 +29,8 @@ public class GameControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		}
+	void puntos (){
 		if (total_puntos > 50) {
 			total_puntos = -50 ;
 			total_vida = (total_vida + 1);
