@@ -21,9 +21,9 @@ public class IngPuntos : MonoBehaviour {
 			AudioSource.PlayClipAtPoint(LevelUp, transform.position);
 
 			GameControl.gamecontrol.total_puntos = GameControl.gamecontrol.total_puntos + puntos;
-			//Debug.Log ("LevelUp;" + GameControl.score);
+			//Debug.Log ("LevelUp;" + GameControl.score); 
 			Destroy (gameObject);
 		}
-		
+		Destroy (gameObject, 24);
 	}
 }
