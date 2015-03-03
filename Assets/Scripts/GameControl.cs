@@ -42,7 +42,7 @@ public class GameControl : MonoBehaviour {
 	/*	void OnCollisionEnter2D(Collision2D col){
 			if (col.gameObject.tag == "Enemigo"){
 				total_puntos = total_puntos -=10;
-				Destroy(col.gameObject);
+
 			}
 			
 			if (col.gameObject.tag == "Ingrediente"){

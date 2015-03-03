@@ -13,17 +13,16 @@ public class IngPuntos : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 	void OnTriggerEnter2D(Collider2D col) {
-		if (col.transform.tag == "Player"){
-
-			AudioSource.PlayClipAtPoint(LevelUp, transform.position);
-
+		if (col.transform.tag == "Player") {
+			AudioSource.PlayClipAtPoint (LevelUp, transform.position);
 			GameControl.gamecontrol.total_puntos = GameControl.gamecontrol.total_puntos + puntos;
-			//Debug.Log ("LevelUp;" + GameControl.score); 
 			Destroy (gameObject);
+		} 
+		else {
+			Destroy (gameObject, 5);
 		}
-		Destroy (gameObject, 24);
 	}
 }

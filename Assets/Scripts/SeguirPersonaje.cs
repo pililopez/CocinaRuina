@@ -4,7 +4,6 @@ using System.Collections;
 public class SeguirPersonaje : MonoBehaviour {
 
 	public Transform personaje;
-	//public float separacion = 6f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +12,7 @@ public class SeguirPersonaje : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3(personaje.position.x, transform.position.y, transform.position.z);
+		transform.position = new Vector3(personaje.position.x, personaje.transform.position.y, transform.position.z);
 	}
 }
 
