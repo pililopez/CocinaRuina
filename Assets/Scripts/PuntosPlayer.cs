@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PuntosPlayer : MonoBehaviour {
 
-	public int total_puntos = 0;
+	//public int Total_puntos = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -12,7 +12,7 @@ public class PuntosPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//guiText.text = "0"+ GameControl.gamecontrol.total_puntos;//cambiar por imagen
-
+		guiText.text = "0"+ GameControl.gamecontrol.total_puntos;//cambiar por imagen
+	//	GameObjet.gamecontrol.total_puntos;
 	}
 }

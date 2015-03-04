@@ -61,7 +61,8 @@ public class ControlEnemigos : MonoBehaviour {
 		Vector3 localx = new Vector3(transform.localScale.x ,transform.localScale.y * -1,transform.position.z );
 		transform.localScale = localx ;
 		goRight *= -1;
-		Vector3 = new Vector3(transform.rotation.x ,transform.rotation.y ,transform.rotation.z (25));
+		//Vector3 = new Vector3(transform.rotation.x ,transform.rotation.y ,transform.rotation.z (25));
+			transform.Rotate(new Vector3(0,0,45));
 		}
 	if (col.gameObject.tag == "Enemigo") {
 		Vector3 localx = new Vector3(transform.localScale.x ,transform.localScale.y * -1,transform.position.z );

@@ -8,7 +8,7 @@ public class IngPuntos : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		Destroy (gameObject, 5);
 	}
 	
 	// Update is called once per frame
@@ -21,8 +21,6 @@ public class IngPuntos : MonoBehaviour {
 			GameControl.gamecontrol.total_puntos = GameControl.gamecontrol.total_puntos + puntos;
 			Destroy (gameObject);
 		} 
-		else {
-			Destroy (gameObject, 5);
-		}
+
 	}
 }
