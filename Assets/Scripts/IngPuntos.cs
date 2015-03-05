@@ -8,7 +8,7 @@ public class IngPuntos : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, 5);
+		Destroy (gameObject, 24);
 	}
 	
 	// Update is called once per frame
