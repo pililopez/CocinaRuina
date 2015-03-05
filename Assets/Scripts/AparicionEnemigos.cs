@@ -3,8 +3,8 @@ using System.Collections;
 
 public class AparicionEnemigos : MonoBehaviour {
 	Vector2 pos;
-	float maxposx =9.48f;
-	float minposx = -9.48f;
+	float maxposx =9.50f;
+	float minposx = -9.50f;
 	float maxposy = 6.25f;
 	float minposy = -6.25f;
 	public float spawnTime=24f;

@@ -31,7 +31,7 @@ public class GameControl : MonoBehaviour {
 	void Update () {
 		}
 	void puntos (){
-		if (total_puntos > 50) {
+		if (total_puntos >= 50) {
 			total_puntos = -50 ;
 			total_vida = (total_vida + 1);
 		}
