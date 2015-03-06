@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: bea425afff78fc24d83ee3d23b8279b3
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - lemon: {instanceID: 0}
+  - puntoDisparo: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

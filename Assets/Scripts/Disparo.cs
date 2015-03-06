@@ -16,9 +16,9 @@ public class Disparo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (Input.GetKeyDown (KeyCode.B)) {
-			nueva_bala = (GameObject)Instantiate(lemon,puntoDisparo.transform.position,Quaternion.identity);
-			nueva_bala.rigidbody.AddForce(puntoDisparo.transform.forward*velocidad);}
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			nueva_bala = (GameObject)Instantiate(lemon,transform.position.x,transform.position.y);
+			nueva_bala.rigidbody.AddForce(puntoDisparo.transform * velocidad);}
 		Destroy (nueva_bala, 2);
 		
 	}
