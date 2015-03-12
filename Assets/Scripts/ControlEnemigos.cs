@@ -8,6 +8,7 @@ public class ControlEnemigos : MonoBehaviour {
 	//public float amplitudeY=1.0f;
 	//public float omegaY=1.0f;
 	public int puntos = 1;
+	public int daño = 1;
 	public float velocidad = 5;
 	//public GameObject golpe;
 	private float goRight = 1f;
@@ -62,7 +63,7 @@ public class ControlEnemigos : MonoBehaviour {
 		transform.localScale = localx ;
 		goRight *= -1;
 		//Vector3 = new Vector3(transform.rotation.x ,transform.rotation.y ,transform.rotation.z (25));
-			transform.Rotate(new Vector3(0,0,45));
+			transform.Rotate(new Vector3(0,0,35));
 		}
 	if (col.gameObject.tag == "Enemigo") {
 		Vector3 localx = new Vector3(transform.localScale.x ,transform.localScale.y * -1,transform.position.z );
@@ -70,5 +71,12 @@ public class ControlEnemigos : MonoBehaviour {
 		goRight *= -1;
 			
 		}
+		if (col.gameObject.tag == "Bala") {
+			GameControl.gamecontrol.total_puntos = GameControl.gamecontrol.total_puntos + puntos;
+			Destroy (gameObject);
+		}
+		if (col.gameObject.tag == "Player") {
+			GameControl.gamecontrol.total_puntos = GameControl.gamecontrol.total_puntos - daño;
+			}
 	}
 }

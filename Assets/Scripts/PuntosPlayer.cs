@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PuntosPlayer : MonoBehaviour {
 
-	public int Total_puntos = 0;
-
+	Text texto;
 	// Use this for initialization
 	void Start () {
-
+		texto = GetComponent<Text> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		guiText.text = "0"+ GameControl.gamecontrol.total_puntos ;//cambiar por imagen
-	//	GameObjet.gamecontrol.total_puntos;
+		texto.text = GameControl.gamecontrol.total_puntos.ToString ();
+		//guiText.text = ""+ total_vida;//cambiar por imagen
+		
+	
+		
 	}
 }

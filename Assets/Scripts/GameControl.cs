@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 
 public class GameControl : MonoBehaviour {
@@ -29,13 +30,12 @@ public class GameControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		}
-	void puntos (){
+
 		if (total_puntos >= 50) {
 			total_puntos = -50 ;
 			total_vida = (total_vida + 1);
 		}
-		if (total_puntos < 50) {
+		if (total_puntos < 0) {
 			total_puntos = +50 ;
 			total_vida = (total_vida - 1);
 		}

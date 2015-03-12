@@ -5,6 +5,7 @@ public class PlayerControl : MonoBehaviour {
 	Animator animacion;
 	public float moveForce = 365f;            
 	public float maxSpeed = 5f; 
+	public Vector3 vdisparo = Vector3.right;
 
 //	private VidaPlayer vida;
 	private ParticleSystem Sangre;
@@ -21,18 +22,21 @@ public class PlayerControl : MonoBehaviour {
 			animacion.SetBool("baja", false);
 			animacion.SetBool("izq_dch", false);
 			animacion.SetBool("izq_dch", false);	
+			vdisparo = Vector3.up;
 		}
 		if (Input.GetKeyDown ("s")) { 
 			animacion.SetBool("sube", false);
 			animacion.SetBool("baja", true);
 			animacion.SetBool("izq_dch", false);
 			animacion.SetBool("izq_dch", false);	
+			vdisparo = Vector3.down;
 		}
 		if (Input.GetKeyDown ("d")) { 
 			animacion.SetBool("sube", false);
 			animacion.SetBool("baja", false);
 			animacion.SetBool("izq_dch", true);
 			transform.localScale = new Vector3(0.37f,0.37f,0.0f);
+			vdisparo = Vector3.right;
 
 		}
 		if (Input.GetKeyDown ("a")) { 
@@ -40,6 +44,7 @@ public class PlayerControl : MonoBehaviour {
 			animacion.SetBool("baja", false);
 			animacion.SetBool("izq_dch", true);
 			transform.localScale = new Vector3(-0.37f,0.37f,0.0f);
+			vdisparo = Vector3.left;
 		}
 	}
 	void FixedUpdate (){
