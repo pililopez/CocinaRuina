@@ -31,7 +31,7 @@ public class GameControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (total_puntos >= 50) {
+		if (total_puntos > 50) {
 			total_puntos = -50 ;
 			total_vida = (total_vida + 1);
 		}
@@ -39,16 +39,6 @@ public class GameControl : MonoBehaviour {
 			total_puntos = +50 ;
 			total_vida = (total_vida - 1);
 		}
-	/*	void OnCollisionEnter2D(Collision2D col){
-			if (col.gameObject.tag == "Enemigo"){
-				total_puntos = total_puntos -=10;
-
-			}
-			
-			if (col.gameObject.tag == "Ingrediente"){
-				total_puntos = total_puntos+=20;
-				Destroy(col.gameObject);
-			}
-		}*/
+	
 	}
 }

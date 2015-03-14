@@ -21,6 +21,7 @@ public class ControlEnemigos : MonoBehaviour {
 	private GameControl total_puntos;
 	public bool destroyed = false;
 	private Vector3 rotacion;
+	public GameObject particulas;
 
 	// Use this for initialization
 	void Start () {
@@ -71,12 +72,14 @@ public class ControlEnemigos : MonoBehaviour {
 		goRight *= -1;
 			
 		}
-		if (col.gameObject.tag == "Bala") {
+	if (col.gameObject.tag == "Bala") {
 			GameControl.gamecontrol.total_puntos = GameControl.gamecontrol.total_puntos + puntos;
 			Destroy (gameObject);
+			Instantiate(particulas, transform.position, Quaternion.identity); 
 		}
-		if (col.gameObject.tag == "Player") {
+	if (col.gameObject.tag == "Player") {
 			GameControl.gamecontrol.total_puntos = GameControl.gamecontrol.total_puntos - daño;
 			}
+	
 	}
 }
